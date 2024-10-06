@@ -1,0 +1,148 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px;
+    background-color: #343a40;
+    border-bottom: 1px solid #495057;
+}
+.left a, .right a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+}
+.right {
+    display: flex;
+    align-items: center;
+}
+.right a {
+    margin-left: 15px;
+    transition: color 0.3s, background-color 0.3s;
+}
+.right a:hover {
+    color: #ffc107;
+    background-color: #495057;
+    border-radius: 5px;
+}
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #343a40;
+    border-bottom: 1px solid #495057;
+}
+.logo img {
+    max-height: 50px;
+}
+.center {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+}
+.center a {
+    text-decoration: none;
+    color: #ffffff;
+    margin: 0 15px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+.center a:hover {
+    color: #ffc107;
+}
+.search {
+    display: flex;
+    align-items: center;
+}
+.search input[type="text"] {
+    padding: 5px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    margin-right: 5px;
+}
+.search button {
+    background-color: #ffc107;
+    border: none;
+    color: #ffffff;
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.search button:hover {
+    background-color: #e0a800;
+}
+main.page {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    padding-top: 120px;
+}
+.description {
+    flex: 1;
+    max-width: 50%;
+    padding-right: 20px;
+}
+.description h1 {
+    font-size: 4em;
+}
+.description p {
+    font-size: 1.5em; 
+}
+.description .buy {
+    background-color: #ffc107;
+    border: none;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.description .buy:hover {
+    background-color: #e0a800;
+}
+.slider {
+    flex: 1;
+    max-width: 50%;
+    position: relative;
+    overflow: hidden;
+}
+.image {
+    display: flex;
+    position: relative;
+    height: 400px; 
+    transition: transform 0.5s ease;
+}
+.bags {
+    min-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bags img {
+    max-height: 100%; 
+    object-fit: contain;
+}
+.ctl {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+.ctl_left, .ctl_right {
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+}
